@@ -13,8 +13,8 @@ export const FabAddNew = () => {
         end: addHours(new Date(), 2),
         bgColor: "#367CF7",
         user: {
-          _id: "123",
-          name: "Fernando",
+          id: "",
+          name: "",
         },
 
     });
