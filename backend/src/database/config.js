@@ -4,8 +4,6 @@ const dbConnection = async () => {
     try {
         await mongoose.connect(process.env.DB_CNN, {
             dbName: 'calendar',
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
         });
         console.log('Base de datos online.');
     } catch (error) {

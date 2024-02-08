@@ -79,6 +79,8 @@ const loginUsuario = async (req, res = response) => {
         res.status(200).json({
             ok: true,
             msg: `Login exitoso. Bienvenido ${usuario.email}.`,
+            uid: usuario.id,
+            name: usuario.name,
             token,
         });
 
@@ -104,6 +106,8 @@ const revalidarToken = async (req, res = response) => {
         ok: true,
         msg: 'Token renovado.',
         token,
+        uid,
+        name
     });
 }
 
